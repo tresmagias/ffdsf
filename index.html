@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidade e Cookies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2d333b;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .cookie-card {
+            background: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            background-color: #0d1117;
+            padding: 1.5rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-blue {
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-blue:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-gray {
+            background-color: #f3f4f6;
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .btn-outline {
+            border: 1px solid #e5e7eb;
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .option-box {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cookie-card">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <div class="bg-yellow-500/20 p-2 rounded-lg">
+                <svg class="w-6 h-6 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div>
+                <h2 class="font-bold text-lg leading-tight">Privacidade e Cookies</h2>
+                <p class="text-xs text-gray-400">Controle sua experiência</p>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="p-6 space-y-3">
+            <a href="https://mellow-cliente-feirao.netlify.app/" class="btn-blue w-full py-3 rounded-lg block text-center no-underline text-sm">
+                Aceitar e Continuar
+            </a>
+            
+            <button class="btn-gray w-full py-3 rounded-lg text-sm">
+                Rejeitar
+            </button>
+
+            <button class="btn-outline w-full py-3 rounded-lg text-sm">
+                Configurar
+            </button>
+
+            <p class="text-[11px] text-gray-500 text-center px-4 leading-relaxed pt-2">
+                Usamos cookies para melhorar sua navegação e experiência.
+            </p>
+
+            <!-- Secções de Opções -->
+            <div class="pt-4">
+                <div class="option-box">
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm">🔒</span>
+                        <span class="text-sm font-bold text-gray-800">Essenciais</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 ml-6">Funcionamento do site</p>
+                </div>
+
+                <div class="option-box">
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm">📊</span>
+                        <span class="text-sm font-bold text-gray-800">Desempenho</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 ml-6">Melhoram sua experiência</p>
+                </div>
+            </div>
+
+            <!-- Link Política -->
+            <div class="text-center pt-2">
+                <a href="#" class="text-[10px] text-gray-400">Veja nossa <span class="text-blue-500 underline">Política</span></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
